@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ACTIVITIES.GameboardActivity">
+
+    <Button
+        android:id="@+id/wealth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="money"
+        app:layout_constraintEnd_toEndOf="@+id/dice1"
+        app:layout_constraintTop_toBottomOf="@+id/dice1" />
+
+    <GridLayout
+        android:id="@+id/monopolyBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045">
+
+
+    </GridLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/dice1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/dice6"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monopolyBoard"
+        android:scaleType="centerCrop"/>
+
+    <ImageButton
+        android:id="@+id/dice2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/dice6"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dice1"
+        app:layout_constraintTop_toTopOf="@+id/dice1"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/wealth4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="88dp"
+        android:text="money"
+        app:layout_constraintStart_toEndOf="@+id/wealth1"
+        app:layout_constraintTop_toTopOf="@+id/wealth1" />
+
+    <Button
+        android:id="@+id/wealth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="money"
+        app:layout_constraintStart_toEndOf="@+id/wealth1"
+        app:layout_constraintTop_toTopOf="@+id/wealth1" />
+
+    <Button
+        android:id="@+id/wealth3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="money"
+        app:layout_constraintEnd_toEndOf="@+id/wealth1"
+        app:layout_constraintStart_toStartOf="@+id/wealth1"
+        app:layout_constraintTop_toBottomOf="@+id/wealth1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player1"
+        app:layout_constraintBottom_toTopOf="@+id/wealth1"
+        app:layout_constraintStart_toStartOf="@+id/wealth1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player3"
+        app:layout_constraintBottom_toTopOf="@+id/wealth3"
+        app:layout_constraintStart_toStartOf="@+id/wealth3" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player2"
+        app:layout_constraintBottom_toTopOf="@+id/wealth2"
+        app:layout_constraintStart_toStartOf="@+id/wealth2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player4"
+        app:layout_constraintBottom_toTopOf="@+id/wealth4"
+        app:layout_constraintStart_toStartOf="@+id/wealth4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

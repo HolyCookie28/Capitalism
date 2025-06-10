@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <group android:name="decorationLines" android:alpha="0.08">
+        <path
+            android:pathData="M0,0h15v120h-15z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M0,0h120v15h-120z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M20,0h10v100h-10z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M0,20h100v10h-100z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M40,0h5v80h-5z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M0,40h80v5h-80z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M60,0h2v60h-2z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M0,60h60v2h-60z"
+            android:fillColor="#FFFFFF" />
+    </group>
+</vector>

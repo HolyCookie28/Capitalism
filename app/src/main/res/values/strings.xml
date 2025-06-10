@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Capitalism</string>
+    <string name="game_title">CAPITALISM</string>
+    <string name="game_subtitle">Fortune Awaits</string>
+    <string name="play_with_friends">Play with Friends</string>
+    <string name="play_alone">Play Alone</string>
+    <string name="create_square">Create Square</string>
+    <string name="version_text">Version 1.0 • © 2025</string>
+    <string name="game_logo">Capitalism Logo</string>
+    <string name="decorative_element">Decorative Element</string>
+</resources>

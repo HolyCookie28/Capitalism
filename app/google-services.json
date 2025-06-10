@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737687346356",
+    "project_id": "capitalism-4b060",
+    "storage_bucket": "capitalism-4b060.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737687346356:android:493ef2003dea3dc90a4be1",
+        "android_client_info": {
+          "package_name": "com.ohad_d.tashtit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcyj_g11pY45Um7THgqNytvmqvZ5Z0xqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

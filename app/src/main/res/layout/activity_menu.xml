@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".ACTIVITIES.MenuActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Premium Gradient Background -->
+    <View
+        android:id="@+id/gradientBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Decorative Top Corner -->
+    <ImageView
+        android:id="@+id/topCornerDecoration"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/decorative_element"
+        android:src="@drawable/corner_decoration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Decorative Bottom Corner -->
+    <ImageView
+        android:id="@+id/bottomCornerDecoration"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/decorative_element"
+        android:rotation="180"
+        android:src="@drawable/corner_decoration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Game Logo -->
+    <ImageView
+        android:id="@+id/gameLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/game_logo"
+        android:elevation="4dp"
+        android:src="@drawable/game_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Game Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/game_title"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameLogo" />
+
+    <!-- Game Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/game_subtitle"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <!-- Menu Buttons Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleText">
+
+        <!-- Play with Friends Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playWithFriendsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/ic_multiplayer"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/play_with_friends"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:backgroundTint="#00897B"
+            app:cornerRadius="12dp"
+            app:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#80DEEA" />
+
+        <!-- Play Alone Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playAloneButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/ic_singleplayer"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/play_alone"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:backgroundTint="#1565C0"
+            app:cornerRadius="12dp"
+            app:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playWithFriendsButton"
+            app:rippleColor="#81D4FA" />
+
+        <!-- Create Square Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createSquareButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_create"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/create_square"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:backgroundTint="#F57C00"
+            app:cornerRadius="12dp"
+            app:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playAloneButton"
+            app:rippleColor="#FFE0B2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Version & Copyright Text -->
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/version_text"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

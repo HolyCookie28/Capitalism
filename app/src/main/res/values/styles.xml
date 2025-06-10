@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="StyledButton" parent="Widget.AppCompat.Button">
+<item name="android:backgroundTint">#FFA500</item> <!-- Orange -->
+<item name="android:textColor">#FFFFFF</item>
+<item name="android:padding">16dp</item>
+<item name="android:layout_width">0dp</item> <!-- Full width with margin -->
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_marginHorizontal">32dp</item>
+<item name="android:elevation">4dp</item>
+<item name="android:background">@drawable/rounded_button</item>
+</style>
+    <style name="MenuButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_transparent</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">40dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+    <style name="PlayButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_fun</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">48dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+    <style name="ImageMatchButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/white_rounded_button</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">48dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingVertical">14dp</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <!-- Square Tile Style (Corner Tiles) -->
+    <style name="TileSquare">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/tile_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Rectangle Tile Style (Middle Tiles) -->
+    <style name="TileRectangle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">2</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/tile_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
